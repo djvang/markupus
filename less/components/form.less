@@ -1,0 +1,42 @@
+@form-color:          #000;
+@form-background:     #fff;
+@form-border:         1px solid #ccc;
+@form-height:         40px;
+@form-group-margin:   15px;
+@form-padding:        5px 10px;
+
+
+.form {
+	&-group {
+		margin-bottom: @form-group-margin;
+	}
+	&-control {
+		display: block;
+		width: 100%;
+		height: @form-height;
+		padding: @form-padding;
+		background-color: @form-background;
+		border: @form-border;
+		color: @form-color;
+		&:focus {
+
+		}
+		&::placeholder {
+
+		}
+	}
+	&-radio {
+
+	}
+	&-checkbox {
+
+	}
+	&-file {
+
+	}
+}
+
+textarea.form-control {
+	height: auto;
+	resize: vertical;
+}

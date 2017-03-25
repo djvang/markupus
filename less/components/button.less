@@ -1,0 +1,23 @@
+@button-color:       #000;
+@button-background:  #fff;
+@button-border:      1px solid #ccc;
+@button-padding:     5px 10px;
+@button-font-size:   14px;
+@button-font-weight: normal;
+
+
+.button {
+	display: inline-block;
+	padding: @button-padding;
+	color: @button-color;
+	border: @button-border;
+	font-size: @button-font-size;
+	font-weight: @button-font-weight;
+	background: @button-background;
+	cursor: pointer;
+	text-decoration: none;
+	&:hover {
+		// hover style
+		text-decoration: none;
+	}
+}

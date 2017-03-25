@@ -1,0 +1,42 @@
+.section {
+	position: relative;
+	z-index: 1;
+	&-header {
+
+	}
+	&-body {
+
+	}
+	&-footer {
+
+	}
+	&-heading {
+
+	}
+	&-description {
+
+	}
+	&-background {
+		background-size: cover;
+		background-position: 50% 50%;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: -100;
+	}
+	&-overlay {
+		background-size: cover;
+		background-color: inherit;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: -1;
+	}
+	&-fill-height {
+		min-height: 100vh;
+	}
+}

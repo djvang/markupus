@@ -1,0 +1,31 @@
+@navbar-breakpoint:    768px;
+
+.navbar {
+	display: flex;
+	&-brand {
+		img {
+			display: block;
+			width: 100%;
+		}
+	}
+	&-nav {
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+		> li {
+			> a {
+
+			}
+		}
+	}
+	&-toggler {
+		@media all and (min-width: @navbar-breakpoint)  {
+			display: none;
+		}
+	}
+	&-collapse {
+		@media all and (max-width: @navbar-breakpoint - 1px)  {
+			display: none;
+		}
+	}
+}
