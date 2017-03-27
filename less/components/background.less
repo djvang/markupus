@@ -1,17 +1,8 @@
 .background {
-	&-primary {
-		background-color: @global-primary-background;
-	}
-	&-secondary {
-		background-color: @global-secondary-background;
-	}
-	&-success {
-		background-color: @global-success-background;
-	}
-	&-warning {
-		background-color: @global-warning-background;
-	}
-	&-danger {
-		background-color: @global-danger-background;
-	}
+	.hook-background();
 }
+
+.hook-background-misc();
+
+.hook-background() {};
+.hook-background-misc() {};

@@ -1,20 +1,21 @@
 .section {
 	position: relative;
 	z-index: 1;
+	.hook-section();
 	&-header {
-
+		.hook-section-header();
 	}
 	&-body {
-
+		.hook-section-body();
 	}
 	&-footer {
-
+		.hook-section-footer();
 	}
 	&-heading {
-
+		.hook-section-heading();
 	}
 	&-description {
-
+		.hook-section-description();
 	}
 	&-background {
 		background-size: cover;
@@ -25,6 +26,7 @@
 		bottom: 0;
 		left: 0;
 		z-index: -100;
+		.hook-section-description();
 	}
 	&-overlay {
 		background-size: cover;
@@ -35,8 +37,22 @@
 		bottom: 0;
 		left: 0;
 		z-index: -1;
+		.hook-section-overlay();
 	}
 	&-fill-height {
 		min-height: 100vh;
+		.hook-section-fill-height();
 	}
 }
+
+.hook-section-misc();
+
+.hook-section() {};
+.hook-section-header() {};
+.hook-section-body() {};
+.hook-section-footer() {};
+.hook-section-heading() {};
+.hook-section-description() {};
+.hook-section-overlay() {};
+.hook-section-fill-height() {};
+.hook-section-misc() {};
