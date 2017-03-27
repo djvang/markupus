@@ -6,6 +6,14 @@
 @button-font-weight: normal;
 
 .button {
+	margin: 0;
+	font: inherit;
+    cursor: pointer;
+    text-align: center;
+    text-transform: none;
+	text-decoration: none;
+	user-select: none;
+
 	display: inline-block;
 	padding: @button-padding;
 	color: @button-color;
@@ -13,12 +21,23 @@
 	font-size: @button-font-size;
 	font-weight: @button-font-weight;
 	background: @button-background;
-	cursor: pointer;
-	text-decoration: none;
+	.hook-button();
 	&:hover {
-		// hover style
 		text-decoration: none;
+		.hook-button-hover();
+	}
+	&:focus {
+		.hook-button-focus();
+	}
+	&:active,
+	&.is-active {
+		.hook-button-active();
 	}
 }
 
+.hook-button-misc();
 
+.hook-button() {};
+.hook-button-hover() {};
+.hook-button-focus() {};
+.hook-button-active() {};
