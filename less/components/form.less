@@ -2,7 +2,8 @@
 @form-background:     #fff;
 @form-border:         1px solid #ccc;
 @form-height:         40px;
-@form-group-margin:   15px;
+@form-size:           1rem;
+@form-group-margin:   1rem;
 @form-padding:        5px 10px;
 
 
@@ -11,6 +12,9 @@
 		margin-bottom: @form-group-margin;
 	}
 	&-control {
+		margin: 0;
+    	border-radius: 0;
+    	font: inherit;
 		display: block;
 		width: 100%;
 		height: @form-height;
@@ -18,25 +22,44 @@
 		background-color: @form-background;
 		border: @form-border;
 		color: @form-color;
+		font-size: @form-size;
+		.hook-form-control();
 		&:focus {
-
+			.hook-form-control-focus();
 		}
 		&::placeholder {
-
+			.hook-form-control-placeholder();
 		}
 	}
+	&-select {
+		.hook-form-select();
+	}
 	&-radio {
-
+		.hook-form-radio();
 	}
 	&-checkbox {
-
+		.hook-form-checkbox();
 	}
 	&-file {
-
+		.hook-form-file();
 	}
+	.hook-form();
 }
 
 textarea.form-control {
 	height: auto;
 	resize: vertical;
 }
+
+.hook-form-misc();
+
+.hook-form() {};
+.hook-form-group() {};
+.hook-form-control() {};
+.hook-form-control-focus() {};
+.hook-form-control-placeholder() {};
+.hook-form-select() {};
+.hook-form-radio() {};
+.hook-form-checkbox() {};
+.hook-form-file() {};
+.hook-form-misc() {};
