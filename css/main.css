@@ -465,6 +465,26 @@ a:hover {
 .button:hover {
   text-decoration: none;
 }
+.button-primary-outline {
+  background: transparent;
+  border-color: blue;
+  color: blue;
+}
+.button-success {
+  background: green;
+  border-color: green;
+  color: #fff;
+}
+.button-danger {
+  background: red;
+  border-color: red;
+  color: #fff;
+}
+.button-small {
+  padding: 10px 20px;
+  font-size: 10px;
+  line-height: 1.4;
+}
 .form-group {
   margin-bottom: 15px;
 }
@@ -543,6 +563,20 @@ textarea.form-control {
 .card-image img {
   display: block;
   width: 100%;
+}
+.card-work {
+  display: block;
+}
+.card-service {
+  display: block;
+}
+.card-service .card-hover {
+  display: none;
+  position: absolute;
+  top: 0;
+}
+.card-service:hover .card-hover {
+  display: block;
 }
 
 /*# sourceMappingURL=main.css.map */
