@@ -1,29 +1,40 @@
 .card {
 	display: flex;
 	flex-direction: column;
+	.hook-card();
 
 	&-header {
-
+		.hook-card-header();
 	}
 	&-body {
-
+		.hook-card-body();
 	}
 	&-footer {
-
+		.hook-card-footer();
 	}
 	&-heading {
-		
+		.hook-card-heading();
 	}
 	&-description {
-		
+		.hook-card-description();
 	}
 	&-image {
 		img {
 			display: block;
 			width: 100%;
 		}
+		.hook-card-image();
 	}
-	.hook-card();
 }
 
+.hook-card-misc();
+
 .hook-card() {};
+.hook-card-header() {};
+.hook-card-body() {};
+.hook-card-footer() {};
+.hook-card-heading() {};
+.hook-card-description() {};
+.hook-card-image() {};
+.hook-card-misc() {};
+
