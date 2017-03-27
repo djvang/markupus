@@ -2,30 +2,47 @@
 
 .navbar {
 	display: flex;
+	.hook-navbar();
 	&-brand {
 		img {
 			display: block;
 			width: 100%;
 		}
+		.hook-navbar-brand();
 	}
 	&-nav {
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
-		> li {
-			> a {
-
-			}
-		}
+		.hook-navbar-nav();
+	}
+	&-item {
+		.hook-navbar-item();
+	}
+	&-link {
+		.hook-navbar-link();
 	}
 	&-toggler {
+		.hook-navbar-toggler();
 		@media all and (min-width: @navbar-breakpoint)  {
 			display: none;
 		}
 	}
 	&-collapse {
+		.hook-navbar-collapse();
 		@media all and (max-width: @navbar-breakpoint - 1px)  {
 			display: none;
 		}
 	}
 }
+
+.hook-navbar-misc();
+
+.hook-navbar() {};
+.hook-navbar-brand() {};
+.hook-navbar-nav() {};
+.hook-navbar-item() {};
+.hook-navbar-link() {};
+.hook-navbar-toggler() {};
+.hook-navbar-collapse() {};
+.hook-navbar-misc() {};
