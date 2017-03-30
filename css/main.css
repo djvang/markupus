@@ -419,25 +419,10 @@ img {
   position: relative;
 }
 .container {
-  width: 960px;
+  max-width: 960px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 10px;
-}
-.background-primary {
-  background-color: #1e87f0;
-}
-.background-secondary {
-  background-color: #222;
-}
-.background-success {
-  background-color: #32d296;
-}
-.background-warning {
-  background-color: #faa05a;
-}
-.background-danger {
-  background-color: #f0506e;
 }
 html {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -452,6 +437,16 @@ a:hover {
   color: #4ea0f3;
 }
 .button {
+  margin: 0;
+  font: inherit;
+  cursor: pointer;
+  text-align: center;
+  text-transform: none;
+  text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   display: inline-block;
   padding: 5px 10px;
   color: #000;
@@ -459,36 +454,17 @@ a:hover {
   font-size: 14px;
   font-weight: normal;
   background: #fff;
-  cursor: pointer;
-  text-decoration: none;
 }
 .button:hover {
   text-decoration: none;
 }
-.button-primary-outline {
-  background: transparent;
-  border-color: blue;
-  color: blue;
-}
-.button-success {
-  background: green;
-  border-color: green;
-  color: #fff;
-}
-.button-danger {
-  background: red;
-  border-color: red;
-  color: #fff;
-}
-.button-small {
-  padding: 10px 20px;
-  font-size: 10px;
-  line-height: 1.4;
-}
 .form-group {
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
 }
 .form-control {
+  margin: 0;
+  border-radius: 0;
+  font: inherit;
   display: block;
   width: 100%;
   height: 40px;
@@ -496,6 +472,7 @@ a:hover {
   background-color: #fff;
   border: 1px solid #ccc;
   color: #000;
+  font-size: 1rem;
 }
 textarea.form-control {
   height: auto;
@@ -505,25 +482,16 @@ textarea.form-control {
   position: relative;
   z-index: 1;
 }
-.section-background {
-  background-size: cover;
-  background-position: 50% 50%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -100;
-}
 .section-overlay {
   background-size: cover;
+  background-position: 50% 50%;
   background-color: inherit;
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: -1;
+  z-index: -100;
 }
 .section-fill-height {
   min-height: 100vh;
@@ -547,7 +515,7 @@ textarea.form-control {
     display: none;
   }
 }
-@media all and (max-width: 768px - 1px) {
+@media all and (max-width: 767px) {
   .navbar-collapse {
     display: none;
   }
@@ -556,27 +524,11 @@ textarea.form-control {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  position: relative;
 }
 .card-image img {
   display: block;
   width: 100%;
-}
-.card-work {
-  display: block;
-}
-.card-service {
-  display: block;
-}
-.card-service .card-hover {
-  display: none;
-  position: absolute;
-  top: 0;
-}
-.card-service:hover .card-hover {
-  display: block;
 }
 
 /*# sourceMappingURL=main.css.map */
