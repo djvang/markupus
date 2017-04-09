@@ -1,0 +1,40 @@
+.card {
+	display: flex;
+	position: relative;
+	@include hook-card();
+
+	&-header {
+		@include hook-card-header();
+	}
+	&-body {
+		@include hook-card-body();
+	}
+	&-footer {
+		@include hook-card-footer();
+	}
+	&-heading {
+		@include hook-card-heading();
+	}
+	&-description {
+		@include hook-card-description();
+	}
+	&-image {
+		img {
+			display: block;
+			width: 100%;
+		}
+		@include hook-card-image();
+	}
+}
+
+@include hook-card-misc();
+
+// @mixin hook-card() {};
+// @mixin hook-card-header() {};
+// @mixin hook-card-body() {};
+// @mixin hook-card-footer() {};
+// @mixin hook-card-heading() {};
+// @mixin hook-card-description() {};
+// @mixin hook-card-image() {};
+// @mixin hook-card-misc() {};
+

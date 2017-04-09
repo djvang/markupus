@@ -1,0 +1,48 @@
+.section {
+	position: relative;
+	z-index: 1;
+	@include hook-section();
+	&-header {
+		@include hook-section-header();
+	}
+	&-body {
+		@include hook-section-body();
+	}
+	&-footer {
+		@include hook-section-footer();
+	}
+	&-heading {
+		@include hook-section-heading();
+	}
+	&-description {
+		@include hook-section-description();
+	}
+	&-overlay {
+		background-size: cover;
+		background-position: 50% 50%;
+		background-color: inherit;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: -100;
+		@include hook-section-overlay();
+	}
+	&-fill-height {
+		min-height: 100vh;
+		@include hook-section-fill-height();
+	}
+}
+
+@include hook-section-misc();
+
+// @mixin hook-section() {};
+// @mixin hook-section-header() {};
+// @mixin hook-section-body() {};
+// @mixin hook-section-footer() {};
+// @mixin hook-section-heading() {};
+// @mixin hook-section-description() {};
+// @mixin hook-section-overlay() {};
+// @mixin hook-section-fill-height() {};
+// @mixin hook-section-misc() {};

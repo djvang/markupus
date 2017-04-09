@@ -1,0 +1,56 @@
+@mixin hook-background() {};
+@mixin hook-background-misc() {};
+
+@mixin hook-base-misc() {};
+
+@mixin hook-button() {};
+@mixin hook-button-hover() {};
+@mixin hook-button-focus() {};
+@mixin hook-button-active() {};
+@mixin hook-button-misc() {};
+
+@mixin hook-form() {};
+@mixin hook-form-group() {};
+@mixin hook-form-control() {};
+@mixin hook-form-control-focus() {};
+@mixin hook-form-control-placeholder() {};
+@mixin hook-form-select() {};
+@mixin hook-form-radio() {};
+@mixin hook-form-checkbox() {};
+@mixin hook-form-file() {};
+@mixin hook-form-misc() {};
+
+@mixin hook-card() {};
+@mixin hook-card-header() {};
+@mixin hook-card-body() {};
+@mixin hook-card-footer() {};
+@mixin hook-card-heading() {};
+@mixin hook-card-description() {};
+@mixin hook-card-image() {};
+@mixin hook-card-misc() {};
+
+@mixin hook-layout-misc() {};
+
+@mixin hook-list() {};
+@mixin hook-list-misc() {};
+
+@mixin hook-navbar() {};
+@mixin hook-navbar-brand() {};
+@mixin hook-navbar-nav() {};
+@mixin hook-navbar-item() {};
+@mixin hook-navbar-link() {};
+@mixin hook-navbar-toggler() {};
+@mixin hook-navbar-collapse() {};
+@mixin hook-navbar-misc() {};
+
+@mixin hook-section() {};
+@mixin hook-section-header() {};
+@mixin hook-section-body() {};
+@mixin hook-section-footer() {};
+@mixin hook-section-heading() {};
+@mixin hook-section-description() {};
+@mixin hook-section-overlay() {};
+@mixin hook-section-fill-height() {};
+@mixin hook-section-misc() {};
+
+@mixin hook-type-misc() {};

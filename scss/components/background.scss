@@ -1,0 +1,8 @@
+.background {
+	@include hook-background();
+}
+
+@include hook-background-misc();
+
+// @mixin hook-background() {};
+// @mixin hook-background-misc() {};

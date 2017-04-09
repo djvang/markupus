@@ -1,0 +1,17 @@
+html {
+	font-family: $global-font-family;
+	font-size: $global-font-size;
+	line-height: $global-line-height;
+	color: $global-color;
+}
+
+a {
+	color: $global-link-color;
+	&:hover {
+		color: $global-link-hover-color;
+	}
+}
+
+@include hook-type-misc();
+
+// @mixin hook-type-misc() {};

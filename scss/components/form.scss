@@ -1,0 +1,66 @@
+// $form-color:          #000;
+// $form-background:     #fff;
+// $form-border:         1px solid #ccc;
+// $form-height:         40px;
+// $form-size:           1rem;
+// $form-group-margin:   1rem;
+// $form-padding:        5px 10px;
+
+
+.form {
+	&-group {
+		margin-bottom: $form-group-margin;
+		@include hook-form-group();
+	}
+	&-control {
+		margin: 0;
+    	border-radius: 0;
+    	font: inherit;
+		display: block;
+		width: 100%;
+		height: $form-height;
+		padding: $form-padding;
+		background-color: $form-background;
+		border: $form-border;
+		color: $form-color;
+		font-size: $form-size;
+		@include hook-form-control();
+		&:focus {
+			@include hook-form-control-focus();
+		}
+		&::placeholder {
+			@include hook-form-control-placeholder();
+		}
+	}
+	&-select {
+		@include hook-form-select();
+	}
+	&-radio {
+		@include hook-form-radio();
+	}
+	&-checkbox {
+		@include hook-form-checkbox();
+	}
+	&-file {
+		@include hook-form-file();
+	}
+	@include hook-form();
+}
+
+textarea.form-control {
+	height: auto;
+	resize: vertical;
+}
+
+@include hook-form-misc();
+
+// @mixin hook-form() {};
+// @mixin hook-form-group() {};
+// @mixin hook-form-control() {};
+// @mixin hook-form-control-focus() {};
+// @mixin hook-form-control-placeholder() {};
+// @mixin hook-form-select() {};
+// @mixin hook-form-radio() {};
+// @mixin hook-form-checkbox() {};
+// @mixin hook-form-file() {};
+// @mixin hook-form-misc() {};

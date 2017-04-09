@@ -1,0 +1,37 @@
+$global-primary-background:    #1e87f0;
+$global-secondary-background:  #222;
+
+$global-success-background:    #32d296;
+$global-warning-background:    #faa05a;
+$global-danger-background:     #f0506e;
+
+$global-font-family:           -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$global-font-size:             16px;
+$global-line-height:           1.46;
+
+$global-color:                 #666;
+$global-link-color:            $global-primary-background;
+$global-link-hover-color:      lighten($global-primary-background, 10%);
+
+
+$container-width:   960px;
+$container-padding: 0 10px;
+
+
+$button-color:       #000;
+$button-background:  #fff;
+$button-border:      1px solid #ccc;
+$button-padding:     5px 10px;
+$button-font-size:   14px;
+$button-font-weight: normal;
+
+
+$form-color:          #000;
+$form-background:     #fff;
+$form-border:         1px solid #ccc;
+$form-height:         40px;
+$form-size:           1rem;
+$form-group-margin:   1rem;
+$form-padding:        5px 10px;
+
+$navbar-breakpoint:    768px;

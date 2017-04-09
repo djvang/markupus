@@ -1,0 +1,48 @@
+// $navbar-breakpoint:    768px;
+
+.navbar {
+	display: flex;
+	@include hook-navbar();
+	&-brand {
+		img {
+			display: block;
+			width: 100%;
+		}
+		@include hook-navbar-brand();
+	}
+	&-nav {
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+		@include hook-navbar-nav();
+	}
+	&-item {
+		@include hook-navbar-item();
+	}
+	&-link {
+		@include hook-navbar-link();
+	}
+	&-toggler {
+		@include hook-navbar-toggler();
+		@media all and (min-width: $navbar-breakpoint)  {
+			display: none;
+		}
+	}
+	&-collapse {
+		@include hook-navbar-collapse();
+		@media all and (max-width: ($navbar-breakpoint - 1px))  {
+			display: none;
+		}
+	}
+}
+
+@include hook-navbar-misc();
+
+// @mixin hook-navbar() {};
+// @mixin hook-navbar-brand() {};
+// @mixin hook-navbar-nav() {};
+// @mixin hook-navbar-item() {};
+// @mixin hook-navbar-link() {};
+// @mixin hook-navbar-toggler() {};
+// @mixin hook-navbar-collapse() {};
+// @mixin hook-navbar-misc() {};
